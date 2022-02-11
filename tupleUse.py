@@ -1,7 +1,6 @@
 # 元组不能更改，固定长度
 foods = ('pizza', 'rice', 'noodle', 'tomate', 'hamburger')
 
-
 for food in foods:
 	print(food)
 
