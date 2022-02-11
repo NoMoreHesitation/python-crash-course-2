@@ -1,8 +1,8 @@
 # 生成名字列表，并输出相关问候语
 names = ["ziyang", "fengyun", "yuchen", 'zhaoxin']
 for i in names:
-    message = f'Hi,{i}'
-    print(message)
+	message = f'Hi,{i}'
+	print(message)
 
 # 添加，插入，删除元素
 names.append('furui')
@@ -30,4 +30,3 @@ print(names)
 # reverse调转列表
 names.reverse()
 print(names)
-
