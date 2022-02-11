@@ -10,7 +10,7 @@ names.insert(0, 'yoyo')
 del names[0]
 print(names)
 
-# pop删除，返回删除的值，为了删除后继续用他
+# pop删除，返回删除的值，删除后还能继续用他
 names_pop = names.pop()
 print(names_pop)
 print(names)
