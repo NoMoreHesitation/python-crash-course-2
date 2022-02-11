@@ -6,7 +6,7 @@ print(person['age'])
 person_gender = person.get('gender', 'agender')
 print(person_gender)
 
-# 遍历字典
+# 遍历字典，不要忘记items
 for key, value in person.items():
 	print(f'Key:{key}')
 	print(f'Value:{value}')
