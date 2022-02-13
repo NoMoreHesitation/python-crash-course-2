@@ -10,3 +10,11 @@ print(person_gender)
 for key, value in person.items():
 	print(f'Key:{key}')
 	print(f'Value:{value}')
+
+# 遍历字典的key，遍历value用values还可加set去除重复value
+for key in person:
+	print(key)
+
+# 集合区分
+languages = {'Ruby', 'Python', 'Java'}
+print(languages)
