@@ -1,5 +1,6 @@
 import sys
 import pygame
+from settings import Settings
 
 
 class AlienInvasion:
@@ -12,9 +13,10 @@ class AlienInvasion:
 		初始化游戏并创建游戏资源
 		"""
 		pygame.init()
-		self.screen = pygame.display.set_mode((800, 600))
+		self.settings = Settings()
+		self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
 		# RGB色光三原色
-		self.bcakground_color = (80, 120, 255)
+		self.bcakground_color = self.settings.background_color
 		pygame.display.set_caption('Alien Invasion')
 
 	def run_game(self):
