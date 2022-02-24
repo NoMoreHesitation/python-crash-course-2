@@ -1,6 +1,7 @@
 import sys
 import pygame
 from settings import Settings
+from ship import Ship
 
 
 class AlienInvasion:
@@ -18,6 +19,7 @@ class AlienInvasion:
 		# RGB色光三原色
 		self.bcakground_color = self.settings.background_color
 		pygame.display.set_caption('Alien Invasion')
+		self.ship = Ship(self)
 
 	def run_game(self):
 		"""
@@ -31,6 +33,7 @@ class AlienInvasion:
 					sys.exit()
 			# 每次绘制新屏幕，擦去旧屏幕
 			self.screen.fill(self.bcakground_color)
+			self.ship.blit()
 			pygame.display.flip()
 
 
